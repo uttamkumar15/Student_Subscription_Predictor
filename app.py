@@ -21,7 +21,7 @@ if engaged_question =='Yes':
 else:
     ques = 0
 if st.button("Predict"):
-    model = pickle.load(open('model.pkl','rb'))
+    model = pickle.load(open('https://github.com/uttamkumar15/Student_Subscription_Predictor/blob/main/model.pkl','rb'))
     result = model.predict([[minutes_watched,day,quiz,exam,ques]])
     if result == 1:
         st.header('Students can take Subscription')
